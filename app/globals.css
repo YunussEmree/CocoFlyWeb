@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brown-900: #2c1810;
+  --brown-800: #3d2116;
+  --brown-700: #4e2a1c;
+  --brown-200: #d4a080;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--brown-900);
+  color: white;
+}
+
+@layer utilities {
+  .bg-brown-900 {
+    background-color: var(--brown-900);
+  }
+  .bg-brown-800 {
+    background-color: var(--brown-800);
+  }
+  .bg-brown-700 {
+    background-color: var(--brown-700);
+  }
+  .text-brown-200 {
+    color: var(--brown-200);
+  }
+}
+
+/* Custom Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+} 
