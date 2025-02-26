@@ -21,17 +21,22 @@ export default function Navigation() {
 
       {/* Navigation Links */}
       <div className="flex items-center space-x-8">
-        <motion.div
+      <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
           className="relative group"
         >
-          <Link 
-            href="/about"
+          <button 
+            onClick={() => {
+              document.getElementById('games-section')?.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }}
             className="text-white hover:text-brown-200 transition-colors px-4 py-2 rounded-lg border-2 border-transparent hover:border-white"
           >
-            ABOUT US
-          </Link>
+            GAMES
+          </button>
         </motion.div>
 
         <motion.div
@@ -39,12 +44,17 @@ export default function Navigation() {
           whileTap={{ scale: 0.95 }}
           className="relative group"
         >
-          <Link 
-            href="/games"
+          <button 
+            onClick={() => {
+              document.getElementById('about-section')?.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }}
             className="text-white hover:text-brown-200 transition-colors px-4 py-2 rounded-lg border-2 border-transparent hover:border-white"
           >
-            GAMES
-          </Link>
+            ABOUT US
+          </button>
         </motion.div>
       </div>
     </nav>

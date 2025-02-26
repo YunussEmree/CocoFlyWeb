@@ -74,7 +74,7 @@ export default function Home() {
 
 
       {/* Games Section */}
-      <section className="py-20 px-8 bg-brown-800">
+      <section className="py-20 px-8 bg-brown-800" id="games-section">
         <h2 className="text-4xl font-bold text-white text-center mb-12">Our Games</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {/* Game cards will be added here */}
@@ -102,14 +102,11 @@ export default function Home() {
               <p className="text-gray-300">Our exciting new games is in development!</p>
             </div>
           </div>
-
-
-
         </div>
       </section>
 
       {/* Team Section */}
-      <section className="py-20 px-8 bg-brown-900">
+      <section className="py-20 px-8 bg-brown-900"  id="about-section">
         <h2 className="text-4xl font-bold text-white text-center mb-12">Meet Our Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
           {teamMembers.map((member, index) => (
