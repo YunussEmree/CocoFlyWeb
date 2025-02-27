@@ -31,7 +31,7 @@ export default function Home() {
       image: '/team/character4.png'
     },
     {
-      name: 'Ali Kemal',
+      name: 'Ali Kemal Özçalkap',
       role: 'Designer, Game Developer',
       description: 'Ensures smooth sailing for all our projects.',
       image: '/team/character5.png'
