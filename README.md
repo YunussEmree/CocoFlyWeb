@@ -1,7 +1,7 @@
 # CocoFlyWeb
 <p>Website for CocoFly Studio</p>
 
-<h3>Used Technologies: </h3>
+## Used Technologies:
 <p>Next.js</p>
 <p>React.js</p>
 <p>TypeScript</p>
